@@ -7,9 +7,9 @@ int main(){
     int age;
 	cout <<"Enter your name:-";
 	//input lena
-	getline(cin,name);
+	getline(cin,name);//space ke baad ka bhi count krta hai
 	cout <<"Hello "<<name<< "tell your age"<<name;
-	cin >>age;
+	cin >>age;//space ke baad ka count nhi karta hai
 	cout <<"Name: "<<name << "\nAge: "<<age;
 	
 }
