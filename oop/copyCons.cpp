@@ -26,6 +26,12 @@ class Chai{
             delete name;
             cout<<"destructer called";
         }
+        Chai(Chai& other){
+        name=new string(other.name);
+        serving=other.serving;
+        ingredients=other.ingredients;
+            
+        }
 };
 int main(){
     Chai Lemon("lemon tea",4,{"water ","tea leaves"});
