@@ -27,7 +27,7 @@ class Chai{
             cout<<"destructer called";
         }
         Chai(Chai& other){
-        name=new string(other.name);
+        name=new string(*other.name);
         serving=other.serving;
         ingredients=other.ingredients;
             
